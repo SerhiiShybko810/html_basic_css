@@ -44,6 +44,9 @@
       .text-right {
         text-align: right;
       }
+      .text-left {
+        text-align: left;
+      }
       .mb-4 {
         margin-bottom: 10px;
       }
@@ -161,17 +164,28 @@
     </style>
   </head>
   <body>
-    <form class="mt-20 container mx-auto">
-      <div class="flex justify-between text-xs">
-        <p class="">
-          POLICY NUMBER:
-          <input type="text" class="w-24" style="background-color: #dbe8f9" />
-        </p>
-        <div class="text-right font-bold">
-          <p>COMMERCIAL GENERAL LIABILITY</p>
-          <p>CG 20 11 12 19</p>
-        </div>
-      </div>
+    <form class="mt-20 container mx-auto w-full">
+      <table class="w-full">
+        <tr class="w-full text-xs">
+          <td class="w-50" style="vertical-align: top">
+            <p class="">
+              POLICY NUMBER:
+              <input
+                type="text"
+                class="w-24"
+                style="background-color: #dbe8f9"
+              />
+            </p>
+          </td>
+          <td class="w-50 text-right">
+            <div class="text-right font-bold">
+              <p>COMMERCIAL GENERAL LIABILITY</p>
+              <p>CG 20 11 12 19</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
       <div>
         <p class="text-sm font-bold text-center py-2">
           THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
@@ -213,13 +227,13 @@
           will be shown in the Declarations.
         </div>
       </div>
-      <div
-        class="py-6 w-full text-xs text-justify"
+      <table
         style="margin-bottom: 200px"
+        class="py-6 w-full text-xs text-justify"
       >
-        <ol class="mb-4 flex space-x-10 -ml-5" type="A">
-          <li class="w-50">
-            <span class="font-bold">Section II - Who Is An Insured</span>
+        <tr class="w-full">
+          <td class="w-50" style="padding-right: 15px">
+            <span class="font-bold">A. Section II - Who Is An Insured</span>
             is amended to include as an additional insured the person(s) or
             organization(s) shown in the Schedule, but only with respect to
             liability for "bodily injury", "property damage" or "personal and
@@ -253,15 +267,15 @@
                 insured.
               </li>
             </ul>
-          </li>
-          <li class="mb-4 w-50">
-            <p>
-              With respect to the insurance afforded to these additional
-              insureds, the following is added to
+          </td>
+          <td class="w-50" style="padding-left: 15px; vertical-align: top">
+            <span>
+              <b>B.</b> With respect to the insurance afforded to these
+              additional insureds, the following is added to
               <span class="font-bold">
                 Section III - Limits Of Insurance:
               </span>
-            </p>
+            </span>
             <p class="mt-2">
               If coverage provided to the additional insured is required by a
               contract or agreement, the most we will pay on behalf of the
@@ -276,14 +290,22 @@
               This endorsement shall not increase the applicable limits of
               insurance.
             </p>
-          </li>
-        </ol>
-      </div>
-      <div class="flex justify-between text-xs">
-        <p class="font-bold">CG 20 11 12 19</p>
-        <p>© Insurance Services Office, Inc., 2018</p>
-        <p class="font-bold">Page 1 of 1</p>
-      </div>
+          </td>
+        </tr>
+      </table>
+      <table class="w-full text-xs">
+        <tr>
+          <td style="width: 33.333%">
+            <p class="font-bold text-left">CG 20 11 12 19</p>
+          </td>
+          <td style="width: 33.333%">
+            <p class="text-center">© Insurance Services Office, Inc., 2018</p>
+          </td>
+          <td style="width: 33.333%">
+            <p class="font-bold text-right">Page 1 of 1</p>
+          </td>
+        </tr>
+      </table>
     </form>
   </body>
 </html>
