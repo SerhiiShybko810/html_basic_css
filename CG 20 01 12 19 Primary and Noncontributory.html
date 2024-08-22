@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CG 20 01 12 19 Primary and Noncontributory</title>
     <style>
-      .container {
-        padding-top: 50px;
-        margin: auto;
-        max-width: 1200px;
-      }
       .header {
         display: flex;
         flex-direction: column;
@@ -18,6 +13,20 @@
         font-weight: bold;
         text-align: right;
         line-height: 15px;
+      }
+      .container {
+        padding-top: 50px;
+        margin: auto;
+        max-width: 1200px;
+      }
+      input {
+        border: transparent;
+      }
+      textarea {
+        border: transparent;
+      }
+      .flex {
+        display: flex;
       }
       .title {
         font-size: 15px;
@@ -35,17 +44,38 @@
       .text-lg {
         font-size: 20px;
       }
-      .text-xs{
+      .text-xs {
         font-size: 12px;
       }
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
       .mb-4 {
-        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .ml-2 {
+        margin-left: 0.5rem;
       }
       .ml-6 {
         margin-left: 15px;
       }
       .-ml-6 {
         margin-left: -15px;
+      }
+      .ml-8 {
+        margin-left: 2rem;
+      }
+      .ml-10 {
+        margin-left: 2.5rem;
+      }
+      .p-2 {
+        padding: 0.5rem;
       }
       .font-bold {
         font-weight: bold;
@@ -56,13 +86,27 @@
       .space-x-20 {
         gap: 5rem;
       }
+      .space-x-10 {
+        gap: 2.5rem;
+      }
       .list-none {
         text-decoration: none;
         list-style: none;
       }
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
       .px-6 {
         padding-left: 15px;
         padding-right: 15px;
+      }
+      .py-6 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .pb-5 {
+        padding-bottom: 1.25rem;
       }
       .w-full {
         width: 100%;
@@ -70,11 +114,35 @@
       .w-50 {
         width: 50%;
       }
+      .w-30 {
+        width: 30%;
+      }
+      .w-24 {
+        width: 6rem;
+      }
       .text-justify {
         text-align: justify;
       }
       .justify-between {
         justify-content: space-between;
+      }
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .mb-5 {
+        margin-bottom: 1.25rem;
+      }
+      .ml-5 {
+        margin-left: 1.25rem;
+      }
+      .-ml-5 {
+        margin-left: -1.25rem;
+      }
+      .border-t {
+        border-top: 1px solid black;
+      }
+      .border {
+        border: 1px solid black;
       }
       ol {
         list-style-type: upper-alpha; /* Use uppercase letters */
@@ -91,6 +159,14 @@
         margin-right: 0.5rem;
       }
 
+      .list-decimal {
+        list-style-type: decimal;
+      }
+
+      .list-inside {
+        list-style-position: inside;
+      }
+
       body {
         font-family: Arial, sans-serif;
       }
@@ -99,50 +175,76 @@
   <body>
     <form class="container">
       <div class="header">
-          <span>COMMERCIAL GENERAL LIABILITY</span>
-          <span>CG 20 01 12 19</span>
+        <span>COMMERCIAL GENERAL LIABILITY</span>
+        <span>CG 20 01 12 19</span>
       </div>
       <div>
         <p class="title py-2">
-          THIS ENDORSEMENT CHANGES THE POLICY.  PLEASE READ IT CAREFULLY.
+          THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
         </p>
         <p class="title text-lg">
-          PRIMARY AND NONCONTRIBUTORY –
-          OTHER INSURANCE CONDITION
+          PRIMARY AND NONCONTRIBUTORY – OTHER INSURANCE CONDITION
         </p>
         <p class="py-4 text-xs">
-          This endorsement modifies insurance provided under the following: 
+          This endorsement modifies insurance provided under the following:
         </p>
         <p class="ml-6 font-bold text-xs">
-          COMMERCIAL GENERAL LIABILITY COVERAGE PART <br>
-          LIQUOR LIABILITY COVERAGE PART <br>
+          COMMERCIAL GENERAL LIABILITY COVERAGE PART <br />
+          LIQUOR LIABILITY COVERAGE PART <br />
           PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART
         </p>
       </div>
       <div
-      class="py-6 w-full text-xs text-justify"
-      style="margin-bottom: 400px"
+        class="py-6 w-full text-xs text-justify"
+        style="margin-bottom: 400px"
       >
-        <ol class="mb-4 flex space-x-20 list-none px-6 ">
-          <li class="" style="width: 50%;">
-            <p class="-ml-6">The following is added to the <span class="font-bold">Other Insurance Condition</span> and supersedes any provision to the contrary: </p>
-            <div class="w-full">
-              <span class="font-bold">Primary And Noncontributory Insurance </span>
-              <p>This insurance is primary to and will not seek contribution from any other insurance available to an additional insured under your policy provided that: </p>
-            </div>
-            <div class="pl-6">(1) The additional insured is a Named Insured under such other insurance; and</div>
-          </li>
-          <li class="mb-4" style="width: 50%;">
-            (2) You have agreed in writing in a contract or agreement that this insurance would be primary and would not seek contribution from any other insurance available to the additional insured.
-            </p>
-          </li>
-        </ol>
+        <table class="w-full">
+          <tr>
+            <td class="w-50" style="padding-right: 15px">
+              <p class="-ml-6">
+                The following is added to the
+                <span class="font-bold">Other Insurance Condition</span> and
+                supersedes any provision to the contrary:
+              </p>
+              <div class="w-full">
+                <span class="font-bold"
+                  >Primary And Noncontributory Insurance
+                </span>
+                <p>
+                  This insurance is primary to and will not seek contribution
+                  from any other insurance available to an additional insured
+                  under your policy provided that:
+                </p>
+              </div>
+              <div class="pl-6">
+                <b>(1)</b> The additional insured is a Named Insured under such
+                other insurance; and
+              </div>
+            </td>
+            <td class="w-50" style="padding-left: 15px; vertical-align: top">
+              <p>
+                <b>(2)</b> You have agreed in writing in a contract or agreement
+                that this insurance would be primary and would not seek
+                contribution from any other insurance available to the
+                additional insured.
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="flex justify-between text-xs" style="width: 100%;">
-        <p class="font-bold">CG 20 01 12 19</p>
-        <p>© Insurance Services Office, Inc., 2018</p>
-        <p class="font-bold">Page 1 of 1</p>
-      </div>
+      <table class="w-full text-xs">
+        <tr>
+          <td style="width: 33.333%">
+            <p class="font-bold text-left">CG 20 11 12 19</p>
+          </td>
+          <td style="width: 33.333%">
+            <p class="text-center">© Insurance Services Office, Inc., 2018</p>
+          </td>
+          <td style="width: 33.333%">
+            <p class="font-bold text-right">Page 1 of 1</p>
+          </td>
+        </tr>
+      </table>
     </form>
   </body>
 </html>
