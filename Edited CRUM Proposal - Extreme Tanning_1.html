@@ -138,6 +138,9 @@
       .pb-6 {
         padding-bottom: 1.5rem;
       }
+      .pb-10 {
+        padding-bottom: 2.5rem;
+      }
       .pb-4 {
         padding-bottom: 1rem;
       }
@@ -292,7 +295,7 @@
         <img src="./logo.png" class="mx-auto" style="width: 150px" />
       </div>
 
-      <div>
+      <div class="pb-10">
         <p class="text-lg font-bold text-center">
           <u>Salon and Spa Insurance Proposal</u>
         </p>
@@ -301,21 +304,31 @@
         </p>
       </div>
 
-      <table class="w-full text-sm table">
+      <table class="text-sm table w-full">
         <tr>
-          <td class="w-50 text-center pb-4"><b>Client ID:</b></td>
-          <td class="w-50 text-center pb-4"><b>Effective Date:</b></td>
+          <td class="text-right pb-4" style="width: 35%">
+            <b>Client ID:</b>
+          </td>
+          <td class="w-20 pb-4"></td>
+          <td class="w-40 pb-4"><b>Effective Date:</b></td>
         </tr>
         <tr>
-          <td class="w-50 text-center pb-4"><b>Quote ID:</b></td>
-          <td class="w-50 text-center pb-4"><b>Quote Date:</b></td>
+          <td class="text-right pb-4" style="width: 35%">
+            <b>Quote ID:</b>
+          </td>
+          <td class="w-20 pb-4"></td>
+          <td class="w-40 pb-4"><b>Quote Date:</b></td>
         </tr>
       </table>
 
-      <table class="w-50 text-sm table">
+      <table class="text-sm table" style="width: 80%">
         <tr>
-          <td class="pb-6 pl-4"><b>Named Insured:</b></td>
-          <td class="pb-6"></td>
+          <td class="pb-10 pl-4"><b>Named Insured:</b></td>
+          <td class="pb-10"></td>
+        </tr>
+        <tr>
+          <td class="pb-10 pl-4"></td>
+          <td class="pb-10"></td>
         </tr>
         <tr>
           <td class="pb-6 pl-4" style="vertical-align: top">
@@ -333,86 +346,92 @@
           <td class="border-r-none w-40 font-bold p-1">
             Professional Liability
           </td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td class="border-r-none w-40 font-bold p-1">
             Employment Practices Liability
           </td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td class="border-r-none w-40 font-bold p-1">
             Sexual Abuse and Molestation
           </td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td class="border-r-none w-40 font-bold p-1">Property</td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td class="border-r-none w-40 font-bold p-1">General Liability</td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td class="border-r-none w-40 font-bold p-1">Employeedishonesty</td>
-          <td class="w-40 font-bold border-l-none border-r-none p-1 text-right">
-            Premium
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            Premium $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
-          <td class="w-80 font-bold border-r-none p-1" colspan="2">
-            Broker Fee
+          <td class="w-40 font-bold border-r-none p-1">Broker Fee</td>
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
-          <td class="w-80 font-bold border-r-none p-1" colspan="2">
-            State Fee
+          <td class="w-40 font-bold border-r-none p-1">State Fee</td>
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            $
           </td>
-          <td class="w-20 font-bold border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
-          <td class="w-80 font-bold border-r-none p-1" colspan="2">
-            Stamping Fee
+          <td class="w-40 font-bold border-r-none p-1">Stamping Fee</td>
+          <td class="w-30 font-bold border-l-none border-r-none p-1 text-right">
+            $
           </td>
-          <td class="w-20 font-bold border-r-none border-l-none p-1">$</td>
+          <td class="w-40 font-bold border-r-none border-l-none p-1"></td>
         </tr>
         <tr class="border-2">
           <td
-            class="w-80 border-r-none font-bold p-1 text-md"
-            colspan="2"
+            class="w-40 border-r-none font-bold p-1 text-md"
             style="background-color: rgb(221, 197, 57)"
           >
             Total Annual Cost
           </td>
           <td
-            class="w-20 font-bold border-l-none p-1 text-md"
+            class="w-30 font-bold border-l-none border-r-none p-1 text-right text-md"
             style="background-color: rgb(221, 197, 57)"
           >
             $
           </td>
+          <td
+            class="w-40 font-bold border-l-none p-1"
+            style="background-color: rgb(221, 197, 57)"
+          ></td>
         </tr>
       </table>
 
-      <div class="py-2 pl-1">
+      <div class="py-2">
         <table class="w-full border-2">
           <tr>
             <td
